@@ -52,8 +52,12 @@
 
     <div id="products">
         <h1>Products</h1>
-        <div id="productcontainer">
-            <img src="images/sjecke5.jpg" alt="Product 1">
+        <div id="productcontainer" class="image-container">
+            <div class="slider-buttons">
+                <button id="prevBtn" onclick="changeProduct(-1)">❮</button>
+                <button id="nextBtn" onclick="changeProduct(1)">❯</button>
+              </div>
+            <img src="images/sjecke/sjecke1.jpg" alt="Product 1" class="slider-image">
             <h1>Daske za rezanje</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
             <span id="price">$19.99</span>
@@ -108,6 +112,6 @@
     </div> -->
 
             
-
+    <script src="scripts/script.js"></script>
 </body>
 </html>
