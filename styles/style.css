@@ -230,8 +230,6 @@ body {
     color: #8f6449;
 }
 
-
-
 #productcontainer img {
     width: 100%;
     height: 50%;
@@ -268,7 +266,6 @@ body {
     margin-right: 10px;
 } */
 
-
 .image-container {
     position: relative;
 }
@@ -280,8 +277,31 @@ body {
     transform: translateX(-50%);
     display: flex;
 }
-  
+
+.slider-buttons2 {
+    position: absolute;
+    bottom: 51%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
 .slider-buttons button {
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    margin: 0 10px;
+    width:  50px;
+    height: 50px;
+    border-radius: 20%;
+    transition: all .5s ease;
+}
+
+.slider-buttons2 button {
     color: white;
     background: transparent;
     font-size: 20px;
@@ -307,7 +327,17 @@ body {
     transition: all .5s ease;
 }
 
+#productcontainer:hover #prevBtn2 {
+    transform: translateX(-5px);
+    transition: all .5s ease;
+}
+
 #productcontainer:hover #nextBtn {
+    transform: translateX(+5px);
+    transition: all .5s ease;
+}
+
+#productcontainer:hover #nextBtn2 {
     transform: translateX(+5px);
     transition: all .5s ease;
 }
@@ -316,11 +346,60 @@ body {
     width: 100%;
     height: auto;
 }
+
+.slider-image2 {
+    width: 100%;
+    height: auto;
+}
   
 .image-container:hover .slider-buttons {
     display: flex;
     justify-content: space-between;
 }
+
+.image-container:hover .slider-buttons2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#productcontainer .sliderbuttons2 {
+    position: absolute;
+    bottom: 51%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#productcontainer .sliderbuttons2 button {
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    margin: 0 10px;
+    width:  50px;
+    height: 50px;
+    border-radius: 20%;
+    transition: all .5s ease;
+}
+
+#productcontainer:hover .sliderbuttons2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#productcontainer:hover #prevBtn2 {
+    transform: translateX(-5px);
+    transition: all .5s ease;
+}
+
+#productcontainer:hover #nextBtn2 {
+    transform: translateX(5px);
+    transition: all .5s ease;
+}
+
 
 
 
