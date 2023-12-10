@@ -112,3 +112,24 @@ function showProduct(n) {
   products.src = images[currentProductIndex].src;
   products.style.display = 'block';
 }
+
+
+function sendEmail(name, email, message) {
+  // Initialize EmailJS with your public key
+  emailjs.init('EEsT6iIV4Ohjq4rBy');
+
+  // Set the parameters for the email
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    message: message
+  };
+
+  // Send the email using EmailJS
+  emailjs.send('service_6f5192e', 'template_kckr4fc', templateParams, 'EEsT6iIV4Ohjq4rBy')
+    .then(function(response) {
+      console.log('Email sent successfully!', response.status, response.text);
+    }, function(error) {
+      console.error('Error sending email:', error);
+    });
+}
